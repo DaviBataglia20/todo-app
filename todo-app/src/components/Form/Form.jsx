@@ -40,11 +40,11 @@ export default function Form({todo,setTodo,}){
     }
     return(
         <>
-        <p className="text-white p-12 text-center font-bold	font-black	">Nueva actividad</p>
+        <p className="text-white text-center font-bold	font-black	">Nueva actividad</p>
         <form onSubmit={añadirTodo}>
-            <div className="bg-violet-900 flex justify-center gap-2 ">
-                <input className="rounded-xl" onChange={(e) => setTarea(e.target.value)} name='tarea' type="text" placeholder=" Escriba una actividad" />
-                <input className="rounded-xl" onChange={(e) => setCategoria(e.target.value.toUpperCase())} type="text" placeholder=" añade una tag" />
+            <div className="flex justify-center gap-2  w-full">
+                <input className="rounded-xl placeholder: text-sm pl-2" onChange={(e) => setTarea(e.target.value)} name='tarea' type="text" placeholder=" Escriba una actividad" />
+                <input className="rounded-xl placeholder: text-sm pl-2" onChange={(e) => setCategoria(e.target.value.toUpperCase())} type="text" placeholder=" añade una tag" />
             </div>
              <div className="flex flex-col">
                 <label className="text-white" htmlFor="priority">Esta Tarea tiene que prioridad</label>

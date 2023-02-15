@@ -16,11 +16,11 @@ export default function Categories({ todo,setfiltro}) {
     }
 
     return (
-        <div className='flex gap-2'>
+        <div className='flex justify-center gap-2 bg-orange-400	 mb-2 rounded-xl p-1.5 w-1/2  hover:drop-shadow-2xl'>
             {
                     categorias.map((categoria, i) => {
                         return (
-                            <div key={i} className="border-2 border-black border-solid rounded-xl bg-black"><button className='p-2' onClick={filtrar}  >{categoria.toUpperCase()}</button></div>
+                            <div key={i} className="rounded-xl bg-orange-200"><button className='p-1.5 text-white font-black' onClick={filtrar}>{categoria.toUpperCase()}</button></div>
                         )
                     })
             }
