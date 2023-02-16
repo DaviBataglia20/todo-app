@@ -4,7 +4,7 @@ export default function Form({todo,setTodo,}){
     
     const [tarea, setTarea] = useState('');
     const [categoria, setCategoria] = useState('Others');
-    const [prioridad, setPrioridad] = useState('Low');
+    const [prioridad, setPrioridad] = useState('Baja');
 
     const id = () => {
         const char = `aqzxswedcvfrtgbnh123456789`
@@ -49,9 +49,9 @@ export default function Form({todo,setTodo,}){
              <div className="flex flex-col">
                 <label className="text-white" htmlFor="priority">Esta Tarea tiene que prioridad</label>
                 <select className="rounded-xl" value={prioridad} onChange={(e) => setPrioridad(e.target.value)} name="prioridad" id="prioridad">
-                    <option value="Low">Relax</option>
-                    <option value="Medium">La puedes hacer hoy</option>
-                    <option value="High">Urgente</option>
+                    <option value="Baja">Relax</option>
+                    <option value="Media">La puedes hacer hoy</option>
+                    <option value="Alta">Urgente</option>
                 </select>
             </div>
             <button className="text-white text-center mx-auto w-full">añadir tarea</button>
