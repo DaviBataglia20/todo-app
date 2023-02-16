@@ -15,7 +15,7 @@ export default function Todo({ tarea,setTodo}) {
     return (
         <div className="flex gap-2">
             <div className="rounded-xl bg-transparent border-2  border-orange-200 p-1">
-                <p>Creada en:{tarea.fecha}</p>
+                <p>fecha de creació<nav></nav>:{tarea.fecha}</p>
             </div>
             <p className="rounded-xl bg-transparent border-2  border-orange-200 p-1">{tarea.tarea}</p>
             <p className="rounded-xl bg-transparent border-2  border-orange-200 p-1">Prioridad:{tarea.prioridad}</p>
